@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form input</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <fieldset>
+           <h1>Форма для відправки резюме</h1>
+            <div>
+                <select name="select" id="select" required>
+                    <option value="0">не вибрано</option>
+                    <option value="1">FullStack Developer</option>
+                    <option value="2">Java Developer</option>
+                    <option value="3">Front-End Developer</option>
+                    <option value="4">Python Developer</option>
+                    <option value="5">QA</option>
+                    <option value="6">Web & UI/UX</option>
+                </select>
+                <label for="text" id="select">
+                    Виберіть вакансію
+                </label>
+            </div>
+            <div>
+                <input accept=".pdf, .html" type="file" id="myfile" name="myfile" required >
+                <label for="myfile">Завантажте резюме</label>
+            </div>
+            <div>
+                    <input id="email" type="email" placeholder="@" required size="16">
+                <label for="email">Введіть свою електронну адресу</label>
+            </div>
+            <div>
+                    <input id="image" type="image" src="../IMG/send1.png" alt="Submit" width="48" height="48">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

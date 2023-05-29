@@ -1,0 +1,29 @@
+fieldset{
+    width: fit-content;
+    height: fit-content;
+}
+div {
+    margin: 30px;
+    width: 682px;
+    height: 45px;
+}
+label {
+    padding: 30px;
+}
+h1{
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-bottom: 50px;
+}
+#image{
+    padding-left: 50px;
+}
+#myfile{
+    padding-right: 0px;
+}
+#email{
+    padding-right: 67px;
+}
+#select{
+    padding-left: 53px;
+}
