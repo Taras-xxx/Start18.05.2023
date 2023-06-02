@@ -143,8 +143,8 @@ footer .logo-footer, .header-social-footer{
     text-align: center;
 }
 footer .logo-footer{
-    padding: 25px;
+    margin: 25px;
 }
 footer .header-social-footer a{
-    padding: 11px;
+    margin: 11px;
 }
