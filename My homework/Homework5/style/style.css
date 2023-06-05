@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffffff;
+    margin: 50 auto;
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+    margin-left: 100px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    margin: 0 auto;
+}
+header div{
+    display: inline-block;
+}
+.logo{
+    margin-right: 460px;
+}
+.header-social a{
+    margin-right: 150px;
+}
+.button-started{
+    background-color: #147B43;
+    color: #FDF8F8;
+    width: 174px;
+    height: 66px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 30px;
+    border: 0;
+}
+.button-started:hover{
+    background-color: #4aa372;
+    transition: 0.7s;
+}
+.button-started:active{
+    background-color: #12251a;
+}
+.header-social{
+    font-size: 24px;
+}
+.main-content{
+    margin: 110px auto;
+}
+.main-content div{
+    display: inline-block;
+}
+.content-geometrie{
+    margin-right: 175px;
+    position: relative;
+}
+.vector{
+    position: absolute;
+    left: 120px;
+    bottom: 247px;
+    z-index: 3;
+}
+.main-content div h1{
+    font-size: 55px;
+    line-height: 82px;
+    color: #000000;
+}
+.main-content button{
+    width: 174px;
+    height: 66px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #147B43;
+    background-color: #F1F8F4;
+    border-radius: 30px;
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.25);
+    border: 0;
+}
+.main-content button:hover {
+    background-color: #98d4b2;
+    transition: 1s;
+  }
+.main-content button:active {
+    background-color: #147B43;
+    color: #FDF8F8;
+    box-shadow: 10px 10px 10px rgba(188, 167, 167, 0.25);
+}
+footer div{
+    display: inline-block;
+}
+footer div h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    color: #000000;
+}
+footer div a{
+    display: block;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    margin: 16px 0px 16px 0px;
+}
+.contact{
+    margin-right: 425px;
+}
+.services{
+    margin-right: 505px;
+}
+.company a{
+    margin-top: 48px;
+}
