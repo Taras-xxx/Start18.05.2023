@@ -2,9 +2,12 @@
     box-sizing: border-box;
 }
 body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.wrapper{
     width: 86%;
     margin: 0 auto;
-    font-family: 'Poppins', sans-serif;
 }
 a{
     text-decoration: none;
@@ -29,8 +32,7 @@ header div, nav{
 .button-started{
     background-color: #147B43;
     color: #FDF8F8;
-    width: 174px;
-    height: 66px;
+    padding: 22px;
     font-size: 24px;
     font-weight: 700;
     text-align: center;
@@ -63,7 +65,7 @@ header div, nav{
 .vector{
     position: absolute;
     left: 120px;
-    bottom: 250px;
+    bottom: 265px;
     z-index: 3;
 }
 .content-geometrie h1{
@@ -76,8 +78,7 @@ header div, nav{
     float: right;
 }
 .main-content button{
-    width: 174px;
-    height: 66px;
+    padding: 22px;
     text-align: center;
     font-size: 24px;
     line-height: 36px;
@@ -97,10 +98,16 @@ header div, nav{
     color: #FDF8F8;
     box-shadow: 10px 10px 10px rgba(188, 167, 167, 0.25);
 }
+footer{
+    overflow: hidden;
+    clear: right;
+}
 footer div{
     display: inline-block;
     float: left;
+    width: 40%;
 }
+
 footer div h2{
     font-weight: 700;
     font-size: 36px;
@@ -114,13 +121,6 @@ footer div a{
     color: #000000;
     margin: 16px 0px 16px 0px;
 }
-.contact{
-    margin-right: 425px;
-}
-.services{
-    margin-right: 505px;
-    float: inline-start;
-}
-.company a{
-    margin-top: 48px;
+footer div:last-child{
+    width: 20%;
 }
