@@ -55,7 +55,6 @@ header{
 .control-search:hover{
     font-size: 4rem;
     transition: 0.5s;
-    cursor: pointer;
 }
 .control-photo:hover{
     cursor: pointer;

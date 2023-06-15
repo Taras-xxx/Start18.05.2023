@@ -50,12 +50,12 @@ header div, nav{
 }
 .main-content{
     margin: 110px auto;
+    overflow: hidden;
 }
 .content-geometrie, .image-friends{
     display: inline-block;
 }
 .content-geometrie{
-    width: fit-content;
     position: relative;
 }
 .geometrie{
@@ -72,7 +72,6 @@ header div, nav{
     font-weight: 700;
     font-size: 55px;
     line-height: 82px;
-    padding-top: ;
 }
 .imagefriends{
     float: right;
@@ -103,11 +102,10 @@ footer{
     clear: right;
 }
 footer div{
-    display: inline-block;
+    display: block;
     float: left;
     width: 40%;
 }
-
 footer div h2{
     font-weight: 700;
     font-size: 36px;
