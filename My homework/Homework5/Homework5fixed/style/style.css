@@ -57,6 +57,7 @@ header div, nav{
 }
 .content-geometrie{
     position: relative;
+
 }
 .geometrie{
     padding-top: 130px;
@@ -98,7 +99,6 @@ header div, nav{
     box-shadow: 10px 10px 10px rgba(188, 167, 167, 0.25);
 }
 footer{
-    overflow: hidden;
     clear: right;
 }
 footer div{
