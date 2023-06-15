@@ -6,16 +6,23 @@ html, body{
     font-size: 10px;
 }
 body{
-    margin: 0 auto;
-    width: 93%;
     background-image: url(../img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
-header{
-    display: inline-flex;
+.wrapper{
+    margin: 0 auto;
     width: 93%;
-    align-items: center;
+}
+p{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+header{
+    display: flex;
     justify-content: space-between;
 }
 .usercontrols{
@@ -28,16 +35,13 @@ header{
     align-items: center;
     margin-top: 70px;
 }
-.vertical{
-    border-left: 3px solid #FFFFFF;
-    height: 2.8rem;
-    margin-left: 1.6rem;
-    margin-right: 2.6rem;
-}
 .text-friday{
     font-size: 2.4rem;
     line-height: 2.9rem;
     color: #C8C8C8;
+    padding-left: 2.3rem;
+    border-left: 0.3rem solid #FFFFFF;
+    margin-left: 2.3rem;
 }
 .control-search{
     font-size: 3rem; 
@@ -48,6 +52,14 @@ header{
     background-color: transparent;
     margin-right: 5rem;
 }
+.control-search:hover{
+    font-size: 4rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.control-photo:hover{
+    cursor: pointer;
+}
 .genre{
     color: #FFFFFF;
     display: inline-flex;
@@ -56,11 +68,11 @@ header{
 }
 .genre div{
     margin-right: 2rem;
+    padding-right: 2.3rem;
+    border-right: 0.3rem solid #FFFFFF;
 }
-.vertical2{
-    border-left: 3px solid #FFFFFF;
-    height: 3.2rem;
-    margin-right: 2rem;
+.genre div:last-child{
+    border: none;
 }
 .maincontent{
     margin: 12.5rem auto;
@@ -76,10 +88,16 @@ header{
     display: inline-flex;
     font-size: 3rem;
     line-height: 3.6rem;
-    align-items: center;
 }
 .moviedetails div{
     margin-right: 25px;
+    padding-right: 2.3rem;
+    border-right: 0.3rem solid #FFFFFF;
+}
+.moviedetails div:last-child{
+    border: none;
+    margin-right: 0;
+    padding-right: 0;
 }
 .gray{
     font-size: 2.9rem;
@@ -95,6 +113,7 @@ div .gray{
     color: #A7A6A6;
     display: flex;
     width: 53%;
+    margin-top: 4rem;
 }
 .starreviews h2{
     display: flex;
@@ -109,11 +128,16 @@ div .gray{
     color: #FFFFFF;
 }
 .button-play button{
-    width: 27.2rem;
-    height: 6.4rem;
+    padding: 0.7rem 4rem;
     background: #D50D1F;
     border-radius: 10px;
     color: #FFFFFF;
+    border: none;
+}
+.button-play button:hover{
+    opacity: 0.7;
+    transition: 0.7s;
+    cursor: pointer;
 }
 .button-play{
     font-size: 2.2rem;
@@ -128,12 +152,17 @@ div .gray{
     margin: 5.5rem auto;
 }
 .episods{
-    display: flex;
     color: #FFFFFF;
-    padding: 1.6rem 2.9rem 1.6rem 5.8rem;
+    padding: 2rem 4rem;
     border: 3px solid #FFFFFF;
     border-radius: 10px;
     font-size: 2.2rem;
+    align-items: center;
+}
+.episods:hover{
+    opacity: 0.7;
+    transition: 0.7s;
+    cursor: pointer;
 }
 .recomend{
     width: 56%;
@@ -149,44 +178,60 @@ div .gray{
 .recomend-control i{
     margin: 1.2rem;
     font-size: 4.1rem;
-}
-.recomend-control .fa-circle-chevron-left{
-    font-size: 3.8rem;
     opacity: 0.4;
+}
+.recomend-control i:hover{
+    font-size: 3.8rem;
+    opacity: 1;
+    transition: 0.7s;
+    cursor: pointer;
 }
 .recomend-control .fa-circle-chevron-right{
     margin-right: 0;
 }
 .slide-film ul li{
-    display: contents;
+    display: block;
+    width: 17%;
 }
 .slide-film ul{
     display: flex;
-    justify-content: space-between;
     padding: 0;
+    justify-content: space-between;
 }
 .slide-film ul li img{
-    margin: 0.5rem;
+    width: 100%;
+    opacity: 0.5;
+}
+.slide-film ul li img:hover{
+    opacity: 1;
+    cursor: grab;
+    transition: 0.7s;
 }
 .age{
     position: fixed;
     bottom: 10.3rem;
     right: 0rem;
-    background: rgba(255, 255, 255, 0.49);
-    width: 17.4rem;
-    height: 6.6rem;     
+    background: rgba(255, 255, 255, 0.49);   
     font-size: 2.4rem;  
     color: #FFFFFF;
     border-left: 3.3rem solid red;
-    padding: 1.8rem 3.3rem;
+    padding: 2.2rem 7rem;
 }
-@media screen and (max-width:830px){
+@media screen and (max-width:550px){
     body{
         background-image: url(../img/background.png);
         background-repeat: no-repeat;
         background-size: contain;
-        margin-left: 20px;
         background-color: rgb(17, 17, 20);
+    }
+    .wrapper{
+        width: 90%;
+        margin: 0 auto;
+    }
+    header{
+        display: inline-flex;
+        width: 100%;
+        align-items: center;
     }
     .logo{
         display: block;
@@ -199,6 +244,11 @@ div .gray{
     .usercontrols{
         margin-top: 2rem;
         margin-left: 5rem;
+    }
+    .text-friday{
+        border: none;
+        padding: 0;
+        margin: 0;
     }
     .control-search{
         font-size: 3rem; 
@@ -236,7 +286,9 @@ div .gray{
         color: #A7A6A6;
     }
     .moviedetails div{
-        margin-right: 3rem;
+        margin-right: 1rem;
+        padding: 0;
+        border: none;
     }
     .vertical2{
         display: none;
@@ -245,38 +297,53 @@ div .gray{
         font-size: 1.4rem;
         color: #A7A6A6;
         display: flex;
-        width: 90%;
         text-align: justify;
+        width: 100%;
+        margin-top: 1rem;
     }
     .button-play button{
         background-image: url(../img/background.png);
         background-repeat: no-repeat;
         background-size: cover;
+        border-radius: 10px;
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        margin-bottom: 2rem;
+    }
+    .button-play button:hover{
+        opacity: 0.7;
+        transition: 0.7s;
+    }
+    .button-play{
         font-size: 2.2rem;
+        display: flex;
+        margin-right: 0;
     }
     .button-play .fa-solid{
-        opacity: 0.6;
+        padding: 1.8rem;
     }
     .button-control{
-        display: contents;
-        margin: 5rem auto;
+        display: block;
+        margin: 0 auto;
+        align-items: center;
     }
     .episods{
-        display: flex;
         color: #FFFFFF;
-        padding: 1rem;
-        font-size: 1.5rem;
-        margin-top: 2rem;
-        width: fit-content;
-        border: 1px solid #FFFFFF;
-        border-radius: 10px;
         background-image: url(../img/background.png);
         background-repeat: no-repeat;
         background-size: cover;
+        padding: 0.6rem 3rem;
+        border: 1px solid #FFFFFF;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        max-width: 15rem;
+    }
+    .episods:hover{
+        opacity: 0.7;
+        transition: 0.7s;
     }
     .recomend{
-        width: 95%;
-        display: inline;
+        width: 100%;
     }
     .list-recomend {
         display: flex;
@@ -286,21 +353,23 @@ div .gray{
         margin-top: 4rem;
     }
     .recomend-control i{
-       display: none;
-    }
-    .slide-film ul li{
-        display: contents;
+        font-size: 2.1rem;
+        opacity: 0.4;
     }
     .slide-film ul{
         display: block;
-        margin: 0rem;
+    }
+    .slide-film ul li{
+        width: 45%;
+        float: left;
+        margin: 0.5rem;
     }
     .slide-film ul li img{
-        margin: 0.5rem;
+        opacity: 1;
     }
     .age{
         position: fixed;
-        bottom: 4rem;
+        bottom: 6rem;
         right: 0rem;
         width: 9rem;
         height: 3.3rem;     
@@ -310,13 +379,9 @@ div .gray{
         padding: 1rem;
     }
 }
-@media screen and (min-width:830px) and (max-width:1050px){
-    .slide-film ul li{
-        display: contents;
-    }
+@media screen and (min-width:550px) and (max-width:1200px){
     .slide-film ul{
         display: flex;
-  
     }
     .slide-film ul li img{
         margin: 0.5rem;
@@ -325,7 +390,23 @@ div .gray{
         font-size: 1.4rem;
         color: #A7A6A6;
         display: flex;
-        width: 90%;
+        width: 60%;
         text-align: justify;
+    }
+    .age{
+        bottom: 3rem;
+    }
+    .recomend{
+        width: 100%;
+    }
+    .moviedetails div{
+        margin-right: 1rem;
+        padding-right: 1rem;
+        border-right: 0.3rem solid #FFFFFF;
+    }
+    .moviedetails div:last-child{
+        border: none;
+        margin-right: 0;
+        padding-right: 0;
     }
 }    
